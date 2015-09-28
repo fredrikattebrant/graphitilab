@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypes">
+      <diagramType
+            name="One Diagram Type"
+            type="one"
+            id="z.graphiti.one.oneDiagramType">
+      </diagramType>
+   </extension>
+   <extension
+         point="org.eclipse.graphiti.ui.diagramTypeProviders">
+      <diagramTypeProvider
+            name="One Diagram Type Provider"
+            class="z.graphiti.one.diagram.OneDiagramTypeProvider"
+            id="z.graphiti.one.oneDiagramTypeProvider">
+         <diagramType
+               id="z.graphiti.one.oneDiagramType">
+         </diagramType>
+      </diagramTypeProvider>
+   </extension>
+
+</plugin>
